@@ -1,0 +1,332 @@
+ * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+justify-content: space-between;
+background-color: rgb(223, 230, 230);
+}
+
+header,
+footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.circle {
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: rgb(226, 117, 39);
+}
+a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+span {
+font-weight: normal;
+font-size: 14px;
+}
+ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+.a2 {
+font-weight: normal;
+}
+svg {
+width: 24px;
+height: 24px;
+}
+footer {
+flex-wrap: wrap;
+padding-left: 5px;
+padding-bottom: 60px;
+}
+.phone {
+margin-right: 60px;
+padding: 25px;
+
+}
+
+hr {
+width: 100%;
+max-width: 100%;
+margin-bottom: 15px;
+}
+
+.main {
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+
+}
+.mainimg {
+width: 300px;
+height: 350px;
+border-radius: 50%;
+}
+.right-section {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+h3{
+margin-bottom: 15px;
+}
+
+.orange,.red,.blue {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: none;
+border: 1px solid black;
+font-weight: bold;
+}
+
+.buttons {
+display: flex;
+gap: 10px;
+margin-top: 50px;
+}
+
+.orange:hover, .red:hover, .blue:hover {
+background-color: transparent;
+cursor: pointer;
+}
+
+.orange {
+background-color: orange;
+}
+.red {
+background-color: red;
+}
+.blue {
+background-color: rgb(0, 242, 255);
+}
+
+.flex {
+display: flex;
+gap: 40px;
+margin-bottom: 30px;
+justify-content: center;
+justify-content: space-evenly;
+}
+
+.project-main {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+ 
+.project-img {
+width: 250px;
+height: 200px;
+
+}
+
+.Projects {
+width: 30%;
+}
+
+.projectH1 {
+text-align: left;
+margin: 80px;
+margin-left: 10%;
+}
+
+.form-row {
+display: flex;
+gap: 10px;
+margin-bottom: 15px;
+}
+.form-group {
+display: flex;
+flex-direction: column;
+margin-bottom: 15px;
+}
+
+.contact-section {
+display: flex;
+justify-content: center;
+gap: 15%;
+margin-top: 80px;
+margin-bottom: 120px;
+
+}
+
+p {
+margin-bottom: 10px;
+}
+
+input,
+textarea {
+margin-top: 8px;
+padding: 8px;
+}
+textarea {
+resize: vertical;
+min-height: 100px;
+}
+
+.contactBtn { 
+width: 100%;
+border: 1px solid black;
+background-color: #ffd000;
+padding: 15px 25px;
+border-radius: 30px;
+}
+ .contactBtn:hover {
+ background-color: transparent;
+ }
+
+p {
+  margin-bottom: 10px;
+}
+ 
+input,
+textarea {
+  margin-top: 8px;
+  padding: 8px;
+}
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+ 
+.contactBtn {
+  width: 100%;
+  border: 1px solid black;
+  background-color: #ffd000;
+  padding: 15px 25px;
+  border-radius: 30px;
+}
+.contactBtn:hover {
+  background-color: transparent;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.exper-texts {
+  max-width: 500px;
+}
+ 
+.resume-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ 
+.h1-resume {
+  margin-left: 11%;
+  margin-bottom: 70px;
+}
+ 
+.exper-texts {
+  display: flex;
+  gap: 10px;
+}
+ 
+.date {
+  font-size: 12px;
+  text-wrap: nowrap;
+}
+ 
+ .resume-ul {
+  min-width: 500px;
+  padding-left: 10%;
+  flex-direction: column;
+  list-style: disc;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+ 
+@media screen and (max-width: 800px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+  .right-section {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+  section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .resume-ul {
+    align-items: center;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Projects {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainimg {
+    width: 200px;
+    height: 250px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+  header ul {
+    font-size: 10px;
+  }
+  .circle {
+    width: 12px;
+    height: 12px;
+  }
+  a,
+  span {
+    font-size: 10px;
+  }
+  .Copyright {
+    padding: 20px;
+  }
+  .exper-texts {
+    margin-left: 20px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .contact-info {
+    text-align: center;
+  }
+}
